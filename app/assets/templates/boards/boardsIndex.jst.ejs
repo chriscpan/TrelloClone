@@ -1,9 +1,11 @@
 <h1> Board Index </h1>
 
 <ul>
-  <% collection.each(function(board){ %> 
+  <% collection.each(function(board){ %>
     <li>
       <%= board.get('title') %>
     </li>
   <% }) %>
 </ul>
+
+<a href='#/api/boards/new'> Create New Board </a>
