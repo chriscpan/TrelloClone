@@ -3,11 +3,11 @@
 <ul>
   <% collection.each(function(board){ %>
     <li>
-      <a href="/api/boards/<%= board.get('id') %>" >
+      <a href="#/boards/<%= board.get('id') %>" >
         <%= board.get('title') %>
       </a>
     </li>
   <% }) %>
 </ul>
 
-<a href='#/api/boards/new'> Create New Board </a>
+<a href='#/boards/new'> Create New Board </a>
