@@ -6,6 +6,8 @@
       <a href="#/boards/<%= board.get('id') %>" >
         <%= board.get('title') %>
       </a>
+
+      <button class='delete' data-id="<%=board.id%>"> Delete! </button>
     </li>
   <% }) %>
 </ul>

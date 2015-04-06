@@ -6,7 +6,7 @@ TrelloClone.Views.BoardsIndex = Backbone.View.extend({
   },
 
   initialize: function(){
-    this.listenTo(this.collection, "sync", this.render);
+    this.listenTo(this.collection, "sync remove add", this.render);
   },
 
   render: function(){
@@ -16,7 +16,9 @@ TrelloClone.Views.BoardsIndex = Backbone.View.extend({
   },
 
   delete: function(event){
-    // event.preventDefault();
-    // this.collection.get()
+    event.preventDefault();
+    var $target = $(event.currentTarget);
+    var board = this.collection.get($target.data('id'));
+    board.destroy();
   }
 });
