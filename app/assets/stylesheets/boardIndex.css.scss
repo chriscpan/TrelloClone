@@ -1,0 +1,15 @@
+.board-index li {
+  padding: 20px;
+  display: block;
+  float: left;
+  background-color: #66CCFF;
+  margin: 10px;
+  border-radius: 5px;
+  font-color: white;
+}
+
+.board-index:after {
+  content: "";
+  display: block;
+  clear: both;
+}

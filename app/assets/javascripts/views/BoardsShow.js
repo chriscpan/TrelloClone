@@ -17,5 +17,5 @@ TrelloClone.Views.BoardsShow = Backbone.View.extend({
     });
     this.$('ul').append(v.render().$el);
     return this;
-  }
+  }, 
 });

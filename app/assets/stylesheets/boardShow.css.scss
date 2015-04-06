@@ -1,0 +1,14 @@
+.list-show li {
+  background-color: #66CCFF;
+  border-radius: 5px;
+  float: left;
+  margin: 10px;
+  display: block;
+  padding: 10px;
+}
+
+.list-show:after {
+  content: "";
+  display: block;
+  clear: both;
+}
