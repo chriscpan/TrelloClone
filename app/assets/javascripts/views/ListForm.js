@@ -9,8 +9,7 @@ TrelloClone.Views.ListForm = Backbone.View.extend({
 
   initialize: function(options){
     this.board = options.board;
-    // debugger
-    this.listenTo(this.board.lists(), 'sync add', this.render);
+    this.listenTo(this.board.lists(), 'sync add', TrelloClone.Views.BoardsShow.render);
   },
 
   createList: function(event){
